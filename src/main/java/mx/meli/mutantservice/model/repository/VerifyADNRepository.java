@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface VerifyADNRepository extends CrudRepository<VerifyADN, Integer> {
+
+    long countByMutant(boolean mutant);
 }
